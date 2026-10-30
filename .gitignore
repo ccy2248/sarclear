@@ -1,0 +1,84 @@
+# 大模型文件
+models/
+trained_model/
+*.pth
+*.pkl
+*.safetensors
+*.bin
+*.pt
+*.onnx
+*.h5
+*.msgpack
+*.ot
+
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 分发/打包
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+svar/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+tmp/
+temp/
+.cache/
+
+# ===== sarclear 新增排除 =====
+# conda 虚拟环境（体积巨大，绝对不能提交）
+.conda/
+
+# 论文相关，不上传
+aaai_material/
+dlnn_material/
+figures_package/
+figures_package (1)/
+Template-DLNN/
+lunwen_demo.py
+lunwen_demo_v2.py
+generate_ppt_images.py
+*.zip
+*.rar
+
+# 训练 / 推理输出
+output_*/
+results/
+debug/
+checkpoints/
