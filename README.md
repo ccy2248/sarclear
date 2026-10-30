@@ -1,31 +1,11 @@
-# (CVPR 2026) 3M-TI: High-Quality Mobile Thermal Imaging via Calibration-free Multi-Camera Cross-Modal Diffusion
-
-Papers: [Arxiv](https://arxiv.org/abs/2511.19117) | [Project Page](https://lab.xiaoyunyuan.net/index.html?project=3m-ti)
-
-Authors: [Minchong Chen](https://scholar.google.com.hk/citations?hl=zh-CN&user=UX2ZtJcAAAAJ) | [Xiaoyun Yuan](https://xiaoyunyuan.net/) | [Junzhe Wan](https://scholar.google.com.hk/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=QbbWdzEAAAAJ) | [Jianing Zhang]() | [Jun Zhang]()
-
-## :rocket: Updates 
-
-[2026-2-21] Our paper has been accepted by CVPR 2026. The code and dataset have been officially released.🎉🎉🎉
-
-## 📱Mobile Thermal Imaging System
-![3MTI](fig/fig_abs.png)
-
-## 🔎Framework Overview
-![3MTI](fig/fig_3m-ti.png)
-
-## 📚Qualitative Results on Synthetic Dataset
-![3MTI](fig/sota.png)
-
-## 📷Qualitative Results on Mobile Imaging System
-![3MTI](fig/val.png)
+# SARClear
 
 ## ⚙️Setup
 ```bash
-git clone https://github.com/work-submit/3MTI.git
-cd 3MTI
-conda create -n 3MTI python=3.10 -y
-conda activate 3MTI
+git clone https://github.com/ccy2248/sarclear.git
+cd sarclear
+conda create -n sarclear python=3.10 -y
+conda activate sarclear
 pip install -r requirements.txt
 ```
 
@@ -58,7 +38,7 @@ Extract semantic information from the reference RGB images:
 #### Step 1: Download the pretrained models
 - Download the pretrained RAM (14M) model weight from [HuggingFace](https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/ram_swin_large_14m.pth).
 - Download the DAPE model weight from [GoogleDrive](https://drive.google.com/drive/folders/12HXrRGEXUAnmHRaf0bIn-S8XSK4Ku0JO?usp=drive_link).
-- You can put these models into `3MTI/trained_model/`.
+- You can put these models into `sarclear/trained_model/`.
 #### Step 2: Modify path
 - Replace lines 16 to 21 of semantic_extract.py with your actual path.
 ```
@@ -83,7 +63,7 @@ XXXXX.png: word1, word2, word3, ...
 ## 🚀Inference
 #### Step 1: Download the pretrained model
 - Download the pretrained 3MTI model from [pretrained weights and data](https://pan.sjtu.edu.cn/web/share/7df7f0df32ac4cd4eecc243f5ff95483) or [HuggingFace](https://huggingface.co/MinchongChen1002/3M-TI/tree/main).
-- You can put this model into `3MTI/trained_model/`.
+- You can put this model into `sarclear/trained_model/`.
 #### Step 2: Modify path
 - Replace lines 90 and 91 of inference_3MTI.py with your actual semantic prompt text path.
 ```

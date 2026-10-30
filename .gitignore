@@ -82,3 +82,19 @@ output_*/
 results/
 debug/
 checkpoints/
+
+# 内部数据处理脚本，不对外发布
+batch_tif2png_0_3.py
+convert_complete_0_3_png.py
+convert_gt_0_3_png.py
+convert_tif2png_gt.py
+convert_tif2png_luojia.py
+convert_tif_to_png_2_98.py
+convert_tif_to_png_full.py
+convert_wo_skip_tif2png.py
+luojiaset_cloudy_gt_png.py
+luojiaset_rgb2png.py
+luojiaset_sar_png.py
+luojiaset_sarclear_0_3_png.py
+rename_dataset_png.py
+extract_rgb_gt.py
